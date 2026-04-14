@@ -50,7 +50,7 @@ async def schedule_finalize(user_id):
         await client.post(
             "https://qstash.upstash.io/v2/publish",
             headers={
-                "Authorization": f"Bearer {QSTASH_TOKEN},
+                "Authorization": f"Bearer {QSTASH_TOKEN}",
                 "Content-Type": "application/json"
             },
             json={
