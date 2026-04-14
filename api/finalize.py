@@ -1,1 +1,1 @@
-from bot import finalize
+from main import finalize
