@@ -6,10 +6,10 @@ from fastapi import Request
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters
 
-TOKEN = os.getenv("8653928586:AAFcM38kPOn65Q0_oSSjoL9irzVQ31mqLlM")
-REDIS_URL = os.getenv("https://relative-leopard-66853.upstash.io")
-REDIS_TOKEN = os.getenv("gQAAAAAAAQUlAAIncDJmOTk0ZDU3NDMxNTU0NWE0YjgyNTU4MmM4ZmUxYjBkN3AyNjY4NTM")
-QSTASH_TOKEN = os.getenv("eyJVc2VySUQiOiJlNmIxMTkyMS1mZThmLTQyZjctYjZhNC00NTMwOWM5MDZjYzgiLCJQYXNzd29yZCI6ImEwMjMxZGEwOWJhYTQwYmVhY2ZhYThkZGQyNTk1YjA2In0=")
+TOKEN = os.getenv("TOKEN")
+REDIS_URL = os.getenv("UPSTASH_REDIS_REST_URL")
+REDIS_TOKEN = os.getenv("UPSTASH_REDIS_REST_TOKEN")
+QSTASH_TOKEN = os.getenv("QSTASH_TOKEN")
 
 app = ApplicationBuilder().token(TOKEN).build()
 
