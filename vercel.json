@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/bot.py": {
+      "runtime": "python3.11"
+    }
+  }
+}
