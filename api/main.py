@@ -54,7 +54,7 @@ async def schedule_finalize(user_id):
                 "Content-Type": "application/json"
             },
             json={
-                "url": "https://YOUR-APP.vercel.app/api/finalize",  # 🔥 CHANGE
+                "url": "https://your-app-name.fly.dev/api/finalize",  # 🔥 CHANGE
                 "delay": 10,
                 "body": {"user_id": user_id}
             }
@@ -137,3 +137,8 @@ async def finalize(request: Request):
     await bot.send_message(chat_id=user_id, text=f"📦 Your link:\n{link}")
 
     return {"status": "done"}
+
+import uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8080)
